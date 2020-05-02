@@ -24,19 +24,19 @@ class EstadosController extends Controller
     {
         try {
             $response = $this->service->index();
-            return $this->response->return(
+            $response = $this->response->return(
                 true,
                 'Lista de estados!',
                 $response
             );
         }
         catch (Exception $e) {
-            return $this->response->return(
+            $response = $this->response->return(
                 false,
                 $e->getMessage(),
             );
         }
-        $response = $this->service->index();
+
         return $response;
     }
 
