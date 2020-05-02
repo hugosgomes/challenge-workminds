@@ -54,6 +54,7 @@ const loadCidades = (index) => {
 const saveEstado = () => {
     name = $("#modalEstado input[name='name-modal']").val();
     if (!name) {
+        $('#modalEstado .input-error').show();
         return;
     }
     data = {
@@ -64,12 +65,14 @@ const saveEstado = () => {
         alert(response.messages);
         $('.close').click();
         $("#modalEstado input[name='name-modal']").val("");
+        $('#modalEstado p').hide();
     });
 }
 
 const editEstado = () => {
     name = $("#modalEstado input[name='name-modal']").val();
     if (!name) {
+        $('#modalEstado .input-error').show();
         return;
     }
     data = {name}
@@ -83,6 +86,7 @@ const editEstado = () => {
         alert(response.messages);
         $('.close').click();
         $("#modalEstado input[name='name-modal']").val("");
+        $('#modalEstado p').hide();
     })
 }
 
@@ -102,6 +106,7 @@ const deleteEstado = () => {
 const saveCidade = () => {
     name = $("#modalCidade input[name='name-modal']").val();
     if (!name) {
+        $('#modalCidade .input-error').show();
         return;
     }
     data = {
@@ -112,12 +117,14 @@ const saveCidade = () => {
         alert(response.messages);
         $('.close').click();
         $("#modalCidade input[name='name-modal']").val("");
+        $('#modalCidade .input-error').hide();
     });
 }
 
 const editCidade = () => {
     name = $("#modalCidade input[name='name-modal']").val();
     if (!name) {
+        $('#modalCidade .input-error').show();
         return;
     }
     data = {name}
@@ -131,6 +138,7 @@ const editCidade = () => {
         alert(response.messages);
         $('.close').click();
         $("#modalCidade input[name='name-modal']").val("");
+        $('#modalCidade .input-error').hide();
     })
 }
 

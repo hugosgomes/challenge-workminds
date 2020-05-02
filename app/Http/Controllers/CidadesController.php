@@ -50,7 +50,7 @@ class CidadesController extends Controller
             if ($validator->fails()) {
                 return $this->response->return(
                     false,
-                    $validator->errors()->messages(),
+                    "Este nome de cidade já está sendo usado",
                     ['name' => $data['name']]
                 );
             }
@@ -106,7 +106,7 @@ class CidadesController extends Controller
             if ($validator->fails()) {
                 return $this->response->return(
                     false,
-                    $validator->errors()->messages(),
+                    "Este nome de cidade já está sendo usado",
                     ['name' => $data['name']]
                 );
             }

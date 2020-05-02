@@ -223,3 +223,10 @@ li:hover {
 #estado-selecionado {
     text-transform: capitalize;
 }
+
+.input-error {
+    font-size: 12px;
+    font-weight: bold;
+    color: red;
+    display: none;
+}

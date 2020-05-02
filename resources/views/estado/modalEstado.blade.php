@@ -8,6 +8,7 @@
         <div class="form">
             <form action="#">
                 <input type="text" name="name-modal" placeholder="Estado">
+                <p class="input-error">Nome obrigatório!</p>
             </form>
             <div class="savemode-modal">
                 <button id="save-button" class="invert-button" onclick="saveEstado()">Salvar</button>

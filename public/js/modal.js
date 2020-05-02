@@ -2,10 +2,12 @@
 
 $('#modalEstado .close').click(function () {
     $('#modalEstado').hide();
+    $('#modalEstado .input-error').hide();
 });
 
 $('#modalCidade .close').click(function () {
     $('#modalCidade').hide();
+    $('#modalCidade .input-error').hide();
 });
 
 function abrirModalSaveEstado() {

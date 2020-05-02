@@ -52,7 +52,7 @@ class EstadosController extends Controller
             if ($validator->fails()) {
                 return $this->response->return(
                     false,
-                    $validator->errors()->messages(),
+                    "Este nome de estado já está sendo usado",
                     ['name' => $data['name']]
                 );
             }
@@ -107,7 +107,7 @@ class EstadosController extends Controller
             if ($validator->fails()) {
                 return $this->response->return(
                     false,
-                    $validator->errors()->messages(),
+                    "Este nome de estado já está sendo usado",
                     ['name' => $data['name']]
                 );
             }
