@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="{{asset('images/16x16.png')}}" type="image/x-icon">
-    <link rel="stylesheet" href="{{asset('css/style.css')}}">
+    <link rel="shortcut icon" href="{{secure_asset('images/16x16.png')}}" type="image/x-icon">
+    <link rel="stylesheet" href="{{secure_asset('css/style.css')}}">
     <script src="https://kit.fontawesome.com/2e314a729a.js" crossorigin="anonymous"></script>
     <title>Challenge WorkMinds</title>
 </head>
@@ -12,7 +12,7 @@
     <div class="container">
         <div class="content">
             <div class="img">
-                <img src="{{asset('images/workingminds.png')}}" alt="workingminds">
+                <img src="{{secure_asset('images/workingminds.png')}}" alt="workingminds">
             </div>
             <div class="first-content">
                 <div class="estados">
@@ -47,7 +47,7 @@
         integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
         crossorigin="anonymous">
     </script>
-    <script src="{{asset('js/script.js')}}"></script>
-    <script src="{{asset('js/modal.js')}}"></script>
+    <script src="{{secure_asset('js/script.js')}}"></script>
+    <script src="{{secure_asset('js/modal.js')}}"></script>
 </body>
 </html>
