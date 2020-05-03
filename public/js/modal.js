@@ -28,7 +28,7 @@ function abrirModalEditEstado(index) {
 }
 
 function abrirModalSaveCidade() {
-    if (cidades.length === 0) {
+    if (!estadoSelecionado) {
         alert('Selecione um Estado');
         return;
     }

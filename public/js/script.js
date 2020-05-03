@@ -1,7 +1,7 @@
 var estados = [];
-var estadoSelecionado = 0;
+var estadoSelecionado = null;
 var cidades = [];
-var cidadeSelecionada = 0;
+var cidadeSelecionada = null;
 
 $(document).ready(() => {
     loadEstados();
